@@ -1,1 +1,1 @@
-worker: bash Kdthon
+worker: bash kdthon
