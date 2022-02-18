@@ -1,0 +1,76 @@
+{
+  "name": "بــوت كــدثــون",
+  "description": "بــوت كــدثــون آلعــرب يمكنــك آلتنصيــب آلان - قنــآه آلســورس @Kdthon ",
+  "logo": "https://telegra.ph/file/961557ca2369753a0665d.jpg",
+  "keywords": [
+    "plugin",
+    "modular",
+    "productivity"
+  ],
+  "repository": "https://github.com/rify39/Kdthon-Arab",
+  "website": "#TODO",
+  "success_url": "#TODO",
+  "env": {
+    "ALIVE_NAME": {
+      "description": "هــنآ ضــع آسمــك آلخــآص فــي تلــي",
+      "value": ""
+    },
+    "APP_ID": {
+      "description": " هــنآ ضــع آيبــي هــآش ",
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "هــنآ ضــع آيبــي آيــدي",
+      "value": ""
+    },
+    "STRING_SESSION": {
+      "description": " هــنآ ضــع كــود آلتـريمكــس ",
+      "value": "",
+      "required": false
+    },
+    "TG_BOT_USERNAME": {
+      "description": " هــنآ ضــع معــرف آلبــوت",
+      "value": ""
+    },
+    "TG_BOT_TOKEN": {
+      "description": "هـنآ ضــع تــوكـن آلبــوت .",
+      "value": ""
+    },
+    "ENV": {
+      "description": "لآ تغيـرهــآ آبــد . ",
+      "value": "ANYTHING",
+      "required": false
+    },
+    "TZ": {
+      "description": "هنـا ضع المنطقه الزمنية الخاص بك  احصل عليه من  http://www.timezoneconverter.com/cgi-bin/findzone.tzc",
+      "value": "Asia/Baghdad",
+      "required": false
+    },
+    "UPSTREAM_REPO": {
+      "description": " لآ تغيـرهــآ آبــد . ",
+      "value": "Kdthon-ar",
+      "required": false
+    }
+  },
+  "addons": [{
+    "plan": "heroku-postgresql",
+    "options": {
+      "version": "12"
+    }
+  }],
+  "buildpacks": [{
+    "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+  },{
+    "url":"https://github.com/heroku/heroku-buildpack-google-chrome"
+  },{
+    "url":"https://github.com/heroku/heroku-buildpack-chromedriver"
+  },{
+    "url": "https://github.com/opendoor-labs/heroku-buildpack-p7zip"
+  },{
+    "url": "https://github.com/heroku/heroku-buildpack-apt.git"
+  },{
+    "url": "https://github.com/chrismytton/heroku-buildpack-jq"
+  },{
+    "url": "heroku/python"
+  }]
+}
